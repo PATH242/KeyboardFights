@@ -20,7 +20,7 @@
 }
 
 body{
-    background-image: url('images/Background.jpg'); /* Path to your background image */
+    background-image: url('../public/images/Background.jpg'); /* Path to your background image */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
@@ -164,4 +164,3 @@ button{
     width: 70%;
     z-index: -1;
 }
-
