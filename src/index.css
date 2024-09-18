@@ -79,10 +79,36 @@ nav{
     gap: 20px;
 }
 
+.menu li {
+    position: relative; /* Ensure positioning context for the pseudo-element */
+}
+
 .menu li a {
     color: var(--white-color);
     font-size: 2rem;
     font-weight: 600;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--second-color); /* Line color */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+.menu li a:hover {
+    color: var(--second-color); /* Change text color on hover */
 }
 
 button{
@@ -163,4 +189,61 @@ button{
     left: 30%;
     width: 70%;
     z-index: -1;
+}
+
+/* NEW */
+
+.sign-button {
+    width: 200px; /* Adjust width as needed */
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--prime-dark-color);
+    color: var(--white-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sign-button:hover {
+    transform: scale(1.05); /* Slightly scale up */
+    background-color: var(--second-color); /* Change color on hover */
+}
+
+.play-now-button {
+    width: 250px; /* Adjust width as needed */
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: font-weight 0.3s ease, background-color 0.3s ease;
+}
+
+.play-now-button:hover {
+    font-weight: 700; /* Bold on hover */
+    background-color: var(--second-color); /* Change color on hover */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust height as needed */
+    }
+}
+
+.logo {
+    animation: bounce 2s infinite; /* Apply bounce animation */
 }
