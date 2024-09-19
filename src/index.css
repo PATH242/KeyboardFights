@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins';
+    font-size: 40%;
     scroll-behavior: smooth;
 }
 
@@ -56,7 +57,7 @@ nav{
 }
 
 .logo img {
-    max-height: 120px; 
+    max-height: 10rem; 
     width: auto; 
 }
 .logo{
@@ -64,6 +65,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 1px;
+    padding-top:5px;
     cursor: pointer;
 }
 
@@ -150,7 +152,7 @@ button{
 }
 
 .content h2{
-    font-size: 4rem;
+    font-size: 4.3rem;
     color: var(--second-color);
     font-weight: 600;
     line-height: 4rem;
@@ -158,14 +160,14 @@ button{
 }
 
 .content h1{
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--white-color);
     font-weight: 600;
     line-height: 4rem;
 }
 
 .content p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--white-color);
 
     font-weight: 500;
@@ -194,7 +196,7 @@ button{
 /* NEW */
 
 .sign-button {
-    width: 200px; /* Adjust width as needed */
+    width: 32rem; /* Adjust width as needed */
     height: 50px;
     border-radius: 10px;
     background-color: var(--prime-dark-color);
@@ -215,7 +217,7 @@ button{
 }
 
 .play-now-button {
-    width: 250px; /* Adjust width as needed */
+    width: 35rem; /* Adjust width as needed */
     height: 50px;
     border-radius: 10px;
     background-color: var(--prime-color);
@@ -246,4 +248,27 @@ button{
 
 .logo {
     animation: bounce 2s infinite; /* Apply bounce animation */
+}
+
+.sign{
+    position:absolute;
+    top: 10%;
+    left: 30%;
+    /* transform: translate(-50%,-50%);     */
+    /* display:flex; */
+    /* height: 100%; */
+            /* margin: 0; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.popup{
+    display: none;
+    width:500px;
+    height:500px;
+    background:var(--second-color);
+    border-radius:5px;
 }
