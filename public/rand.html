@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyFights</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="rand.css">
+    <script src="rand.js" defer></script>
 </head>
 <body>
     <nav>
@@ -26,80 +27,38 @@
             Sign in - Sign up
         </button>
     </nav>
-
-    <div class="about">
-        <div class="shape1">
-            <img src="images/line-1.png" alt="">
-        </div>
-        <div class="shape2">
-            <img src="images/line-2.png" alt="">
-        </div>
-
-        <div class="content">
-            <h2>Welcome,</h2>
-            <h1>I am KeyFights.</h1>
-            <p>Unleash your typing speed and precision—compete against friends or race against the clock. Ready to type your way to victory? Start your engines and let’s see who’s the fastest typist!</p>
-            <a href="./rand.html">
-              <button class="play-now-button">PLAY NOW</button>
-          </a>
-          
-        </div>
-
-        <div class="image">
-            <img src="images/Main Image.png" alt="">
-        </div>
+    <div class="wrapper-content">
+    <div class="wrapper">
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+                <p id="paragraph"></p>
+            </div>
         
-    </div>
-    <div class="popup">
-      <span class="close-btn" id="closeBtn"> &times; </span>
-      <div class="sign">
-        <div class="tab">
-        <button class="sign-in">
-          Sign in
-        </button>
-        <button class="sign-up">
-          Sign up
-        </button>
+        <div class="content">
+            <ul class="result-details">
+                <li class="time">
+                    <p>Time Left:</p>
+                    <span>60s</span>
+                </li>
+                <li class="mistake">
+                    <p>Mistake:</p>
+                    <span>0</span>
+                </li>
+                <li class="wpm">
+                    <p>WPM:</p>
+                    <span>0</span>
+                </li>
+                <li class="cpm">
+                    <p>CPM:</p>
+                    <span>0</span>
+                </li>
+            </ul>
+            <button>Try Again</button>
         </div>
-      
-      <form class="log1">
-        <div class="login">
-           Login to your account
-        </div>
-        <label class="email-label">Email:</label>
-        <input type="text" id="email-input" placeholder="YourName@example.com">
-        <label class="password-label">Password:</label>
-        <input type="password" id="password-input" placeholder="Minimum 6 characters">
-      
-      <button class="submit">
-        Submit
-      </button>
-    </form>
-    <form class="log2">
-      <div class="login">
-         Create your account
-      </div>
-      <div class="names">
-        <div class="eachname">
-      <label class="first-label">First Name:</label>
-      <input type="text" id="first" placeholder="First"></div>
-      <div class="eachname">
-      <label class="last-label">Last Name:</label>
-      <input type="text" id="last" placeholder="Last"></div>
-      </div>
-      <label class="email-label">Email:</label>
-      <input type="text" id="email-input" placeholder="YourName@example.com">
-      <label class="password-label">Password:</label>
-      <input type="password" id="password-input" placeholder="Minimum 6 characters">
-    
-    <button class="submit">
-      Submit
-    </button>
-  </form>
     </div>
     </div>
-  <script src="index.js">
-  </script>
+    </div>
 </body>
 </html>
 <!-- <!DOCTYPE html>
