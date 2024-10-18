@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import "@/app/globals.css";
 import "./rand.css";
-import { start } from "repl";
+// import { start } from "repl";
 
 const paragraphs: string[] = [
   "Their politician was, in this moment, a notour paperback. The first armless grouse is, in its own way, a gear. The coat is a wash. However, a cake is the llama of a caravan. Snakelike armies show us how playgrounds can be viscoses. Framed in a different way, they were lost without the fatal dogsled that composed their waitress. Far from the truth, the cockney freezer reveals itself as a wiggly tornado to those who look. The first hawklike sack.",
@@ -34,7 +34,7 @@ export default function KeyFightsRace() {
   const [wpm, setWpm] = useState<number>(0);
   const [cpm, setCpm] = useState<number>(0);
   const [isTyping, setIsTyping] = useState<boolean>(false);
-  const [selectedParagraph, setSelectedParagraph] = useState<string>(""); 
+  // const [selectedParagraph, setSelectedParagraph] = useState<string>(""); 
   // const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
   const typingTextRef = useRef<HTMLParagraphElement | null>(null);
   const inpFieldRef = useRef<HTMLInputElement | null>(null);
@@ -52,8 +52,8 @@ export default function KeyFightsRace() {
   
     // select random paragraph
     const ranIndex = Math.floor(Math.random() * paragraphs.length);
-    var selectedPara : string = paragraphs[ranIndex];
-    setSelectedParagraph(selectedPara);
+    const selectedPara : string = paragraphs[ranIndex];
+    // setSelectedParagraph(selectedPara);
 
     if (typingTextRef.current) {
       typingTextRef.current.innerHTML = ''; // Clear previous paragraph
